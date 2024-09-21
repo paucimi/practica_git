@@ -5,15 +5,18 @@ Practica de Git donde ponemos a prueba nuestros conocimientos en el manejo de la
 
 12.git reflog muestra el registro de todas las operaciones que he realizado en el repositorio, incluyendo los commits que he eliminado.Identificamos el hash y rehacemos el último commit con git reset --hard <hash>.
 
-13.git checkout styled primero me aseguro de estar en la rama 'styled'.
+13.git checkout styled primero me aseguro de estar en la rama 'styled'. 
 git merge main styled absorbe a main
 git commit -m formalizamos los cambios en el historial del repositorio.
+No hubo conflicto ya que los cambios que se hicieron en las ramas sytled y main eran compatibles y se integraron sin problemas.
 
 19.git checkout styled para asegurarme estar en la rama "styled" donde voy a incorporar los cambios.
 git merge htmlify fusiono la rama "htmlify" con "styled"
+No hubo conflicto al fusionar "htmlify" con "styled", los cambios eran compatibles sin superposición.Las ramas eran compatibles y se integraron sin conflictos.
 
 21. git checkout main para cambiar a la rama main
 git merge styled
+No hubo conflictos nuevamente ya que la integración de los cambios de ambas ramas se realizó sin problemas.Se hizo ramificación temprana y fusión frecuente por lo que las fusiones anteriores se realizaron sin conflictos.
 
 25. git log --graph --oneline --decorate
 
